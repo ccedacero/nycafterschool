@@ -1,0 +1,5 @@
+<%=form_for @enrollment do |f|  %>
+<%=f.collection_select(:user_id, @users, :id, :name) %>
+<%=f.collection_select(:program_id, @programs, :id, :site_name)%>
+<%=f.submit "Enroll Student"%>
+<% end %>
